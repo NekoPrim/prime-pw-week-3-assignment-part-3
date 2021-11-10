@@ -1,1 +1,24 @@
 /* give your assignment a fun background color */
+body {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: autumn;
+  background-color: red;
+}
+
+@keyframes autumn {
+  0% {background-color: red;}
+  25% {background-color: orange;}
+  50% {background-color: yellow;}
+  75% {background-color: brown;}
+  100% {background-color: red;}
+}
+
+header {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  text-align: center;
+}
