@@ -28,8 +28,6 @@ console.log('4. Removed item:');
 
 let removedS=supplyChanges.pop();
 
-supplyChanges.pop();
-
 console.log(removedS);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
