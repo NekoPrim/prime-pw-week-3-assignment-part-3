@@ -51,7 +51,7 @@ for (x in supplyChanges){
     console.log('Add', supplyChanges[x], 'parts');
   }
   if (supplyChanges[x] === 0){
-    console.log('No Change');
+    console.log('No Change', supplyChanges[x]);
   }
   if (supplyChanges[x] < 0){
     console.log('Remove', supplyChanges[x], 'parts');
@@ -66,7 +66,15 @@ console.log('7. Showing supplyChanges with "for of" loop');
 x=0;
 
 for (x of supplyChanges){
-  console.log(x);
+  if (x > 0){
+    console.log('add', x, 'parts');
+  }
+  if (x === 0){
+    console.log('No Change', x);
+  }
+  if (x < 0){
+    console.log('Remove', x, 'parts');
+  }
 }
 
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
@@ -76,7 +84,15 @@ x=0;
 let length= supplyChanges.length;
 
 while (x < length){
-  console.log(supplyChanges[x]);
+  if (supplyChanges[x] > 0){
+    console.log('add', supplyChanges[x], 'parts');
+  }
+  if (supplyChanges[x] === 0){
+    console.log('No Change', supplyChanges[x]);
+  }
+  if (supplyChanges[x] < 0){
+    console.log('Remove', supplyChanges[x], 'parts');
+  }
   x ++;
 }
 
