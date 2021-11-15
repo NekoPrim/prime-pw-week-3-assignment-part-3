@@ -107,3 +107,19 @@ for (x= 0; x < length; x ++){
 }
 
 console.log(sum);
+
+
+//my stuff
+
+$(document).ready(function() {
+  $(".control").on('click', 'span', function() {
+    $(".foto img").removeClass("turkey");
+
+    var newImage = $(this).index();
+
+    $(".foto img").eq(newImage).addClass("turkey");
+
+    $(".control span").removeClass("selected");
+    $(this).addClass("selected");
+  });
+});

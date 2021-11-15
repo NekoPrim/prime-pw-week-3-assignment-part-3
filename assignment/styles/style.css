@@ -9,14 +9,15 @@ body {
 @keyframes autumn {
   0% {background-color: red;}
   25% {background-color: orange;}
-  50% {background-color: yellow;}
+  50% {background-color: #daa520;}
   75% {background-color: brown;}
   100% {background-color: red;}
 }
 
 header {
   background-color: black;
-  border: 1px solid white;
+  border: 2px solid white;
+  border-radius: 25px;
   color: white;
   margin-left: 10rem;
   margin-right: 10rem;
@@ -25,10 +26,58 @@ header {
 
 .questions {
   background-color: black;
-  border: 1px solid white;
+  border: 2px solid white;
+  border-radius: 20px;
   color: white;
   margin-left: 10rem;
   margin-right: 10rem;
   margin-top: 5rem;
+  text-align: center;
+}
+
+.foto {
+  border: 5px solid black;
+  border-radius: 10px;
+  height: 7rem;
+  left: 50%;
+  margin-top: 5rem;
+  position: relative;
+  transform: translateX(-50%);
+  width: 10rem;
+}
+
+.foto img {
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  opacity: 0;
+  position: absolute;
+}
+
+.foto img.turkey {
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  opacity: 1;
+}
+
+.turkey {
+  border-radius: 10px;
+  height: 7rem;
+  width: 10rem;
+}
+
+.cornucopia {
+  border-radius: 10px;
+  height: 7rem;
+  width: 10rem;
+}
+
+.happy {
+  border-radius: 10px;
+  height: 7rem;
+  width: 10rem;
+}
+
+.control {
+  cursor: pointer;
   text-align: center;
 }
